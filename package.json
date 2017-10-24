@@ -1,27 +1,27 @@
 {
-  "name": "karma-chai-things",
-  "description": "Chai Things plugin for Karma",
+  "name": "karma-chai-json-schema",
+  "description": "chai-json-schema plugin for Karma",
   "keywords": [
     "karma",
     "chai",
-    "things",
+    "json-schema",
     "mocha"
   ],
-  "version": "0.1.4",
-  "author": "Leon Mergen <leon2solatis.com>",
+  "version": "0.1.1",
+  "author": "David McKinnon <https://github.com/Blatmann>",
   "main": "./index.js",
   "license": "MIT",
-  "homepage": "https://github.com/solatis/karma-chai-things",
+  "homepage": "https://github.com/Blatmann/karma-chai-json-schema",
   "repository": {
     "type": "git",
-    "url": "https://github.com/solatis/karma-chai-things.git"
+    "url": "https://github.com/Blatmann/karma-chai-json-schema.git"
   },
   "bugs": {
-    "url": "https://github.com/solatis/karma-chai-things/issues"
+    "url": "https://github.com/Blatmann/karma-chai-json-schema/issues"
   },
   "peerDependencies": {
-    "chai-things": "*",
-    "karma": ">=0.6"
+    "chai-json-schema": "*",
+    "karma": ">=1.0"
   },
   "engines": {
     "node": ">=0.8"

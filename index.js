@@ -5,8 +5,8 @@ var pattern = function(file) {
 };
 
 var framework = function(files) {
-  files.unshift(pattern(path.dirname(require.resolve('chai-things')) + '/chai-things.js'));
+  files.unshift(pattern(path.dirname(require.resolve('chai-json-schema')) + '/index.js'));
 };
 
 framework.$inject = ['config.files'];
-module.exports = {'framework:chai-things': ['factory', framework]};
+module.exports = {'framework:chai-json-schema': ['factory', framework]};
