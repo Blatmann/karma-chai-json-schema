@@ -37,4 +37,18 @@ module.exports = function(config) {
 
 Keep in mind that, since Karma loads its frameworks in reverse and `chai-json-schema` depends on `chai`, you should declare it accordingly as done above.
 
-karma-chai-json-schema currently does not support AMD/RequireJS, mainly because I cannot figure out the way this dependency should be injected. I encourage other people to look into this and hack it to make it work!
+
+Known issues
+------------
+
+In testing I get this error:
+
+```AssertionError: tv4 dependency: expected undefined to be truthy
+  at http://localhost:8080/_karma_node_modules/chai/chai.js:9320
+PhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 0 of 0 ERROR (0.12 secs / 0 secs)```
+
+###AMD/RequireJS
+
+Like karma-chai-things from which it’s forked, karma-chai-json-schema currently does not support AMD/RequireJS. And, like [solatis](https://github.com/solatis), this is mainly because I can‘t figure out how this dependency should be injected.
+
+Any help appreciated :)
