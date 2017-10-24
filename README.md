@@ -82,9 +82,10 @@ And add `karma-chai-json-schema` to the `plugins`
 
 ```js
 plugins: [
-    'karma-mocha',
-    'karma-chai-json-schema',
-    'karma-chai',
+  'karma-mocha',
+  'karma-chai-json-schema',
+  'karma-chai'
+  ]
 ```
 
 Keep in mind that, since Karma loads its frameworks in reverse and `chai-json-schema` depends on `chai`, you should declare it accordingly as done above.
