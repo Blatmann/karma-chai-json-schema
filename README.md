@@ -77,6 +77,7 @@ module.exports = function(config) {
   });
 }
 ```
+Keep in mind that, since Karma loads its frameworks in reverse and `chai-json-schema` depends on `chai`, `chai-json-schema` must come before `chai`, as above.
 
 And add `karma-chai-json-schema` to the `plugins`
 
@@ -88,7 +89,6 @@ plugins: [
   ]
 ```
 
-Keep in mind that, since Karma loads its frameworks in reverse and `chai-json-schema` depends on `chai`, you should declare it accordingly as done above.
 
 
 AMD/RequireJS support
