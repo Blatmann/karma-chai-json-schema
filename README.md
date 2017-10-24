@@ -34,13 +34,39 @@ This Karma plugin requires Karma `~1.0` or higher.
 Installation
 ------------
 
-Install the module via npm
+Installation is only on your local at the moment.
+
+### Local installation
+Pull or download the repo.
+
+```sh
+$ cd /path/to/karma-chai-json-schema/package.json
+```
+
+Run `npm pack`
+
+```sh
+$ npm pack
+```
+This will make a tarball named `karma-chai-json-schema-` plus the current version from the package.json:
+`karma-chai-json-schema-version.tgz` — `karma-chai-json-schema-version-0.1.1.tgz` for example
+
+Install it in your project
+
+```sh
+$ cd path/to/your/project/
+$ npm install /path/to/karma-chai-json-schema-version.tgz
+```
+
+Eventually it'll just be by npm
 
 ```sh
 $ npm install --save-dev karma-chai-json-schema
 ```
 
-Add `chai-json-schema` to the `frameworks` key in your Karma configuration:
+####Karma configuration
+
+Add `chai-json-schema` to the `frameworks` key in your karma.conf.js:
 
 ```js
 module.exports = function(config) {
@@ -50,6 +76,15 @@ module.exports = function(config) {
     #...
   });
 }
+```
+
+And add `karma-chai-json-schema` to the `plugins`
+
+```js
+plugins: [
+    'karma-mocha',
+    'karma-chai-json-schema',
+    'karma-chai',
 ```
 
 Keep in mind that, since Karma loads its frameworks in reverse and `chai-json-schema` depends on `chai`, you should declare it accordingly as done above.
